@@ -1,0 +1,123 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FDFBEF;
+    color: #5C4033;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #55643E;
+    color: #FDFBEF;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: #FDFBEF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #F28A77;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #C85644;
+}
+
+/* Main Section for Contact Page */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: calc(100vh - 160px);  /* Makes sure the main area takes up the remaining space */
+    margin-top: 80px;  /* Space from the top to avoid overlapping the header */
+}
+
+/* Section with Contact Form */
+section {
+    background-color: #55643E;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: #FDFBEF;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    color: #FDFBEF;
+    text-align: left;
+    font-size: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #FDFBEF;
+}
+
+button {
+    background-color: #8B0000;
+    color: #FDFBEF;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A52A2A;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #55643E;
+    color: #FDFBEF;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
