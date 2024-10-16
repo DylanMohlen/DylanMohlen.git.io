@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,23 +7,18 @@
     
   body {
   font-family: Arial, sans-serif;
-  -webkit-text-stroke-width: 4;
-  -webkit-text-stroke-color: var(--Dark-char, #333);
-  font-size: 16px;
+   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px; 
   background-color: #FFFFF0;
   }
   
-  /* Header */
   .header {
     padding: 30px;
     text-align: center;
     background: white;
     text-align: center;
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: var(--Dark-char, #333);
     font-family: "Playfair Display";
     font-size: 48px;
     font-style: normal;
@@ -43,7 +38,7 @@ position: absolute;
     font-size: 50px;
   }
   
-  /* Navigation bar */
+  
   .topnav {
     display: flex;
     justify-content: space-between;
@@ -52,7 +47,7 @@ position: absolute;
   }
   
   .topnav a {
-    flex: 1; /* Spread out links evenly */
+    flex: 1; 
     color: #f2f2f2;
     padding: 14px;
     text-align: center;
@@ -72,12 +67,12 @@ position: absolute;
     color: black;
   }
   
-  /* Flexbox Layout */
+  
   .row {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    gap: 20px; /* Adds consistent spacing between the boxes */
+    gap: 20px; 
   }
   
   .leftcolumn, .rightcolumn {
@@ -85,53 +80,85 @@ position: absolute;
   }
   
   .leftcolumn {
-    flex: 3; /* Takes up more space */
+    flex: 3; 
   }
   
   .rightcolumn {
-    flex: 1; /* Takes up less space */
+    flex: 1; 
   }
   
-  /* Card design */
+  
   .card {
-    background-color: white;
+    background-color: #FFFFF0;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #556B2F;
   }
-  .card h2 {
- color: #333;
- text-align: center;
- /* Heading styles */
- font-family: "Playfair Display";
- font-size: 56px;
- font-style: normal;
- font-weight: 700;
- line-height: normal;
+    .card h2 {
+    color: #333;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   
-  /* Fake image styling */
-  .fakeimg {
+  .images {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
-    text-align: center;
-    height: 200px;
-          
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+            
   }
-  
-  /* Footer */
+  .images img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transform: translate(-50%, -50%);
+
+  }
+
   .footer {
     padding: 20px;
     text-align: left;
     background-color: #ddd;
     margin-top: 20px;
   }
-  
-  /* Responsive layout */
+ 
   @media (min-width: 401px) and (max-width: 800px) {
-    /* styles for medium screen sizes */
+    
+    .topnav {
+      flex-direction: row; 
+      justify-content: space-around;
+    }
+  
+    .topnav a {
+      font-size: 20px; 
+      width: auto; 
+    }
   }
   
   @media (min-width: 801px) {
-    /* styles for large screen sizes */
+ 
+  }
+  @media (max-width: 600px) {
+    .footer {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 800px) {
+    .topnav {
+      flex-direction: column; 
+      align-items: center;
+    }
+    .topnav a {
+      font-size: 18px; 
+      padding: 10px;
+    }
   }
