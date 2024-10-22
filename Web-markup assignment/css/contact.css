@@ -19,6 +19,12 @@ body {
     text-align: center;
     background-color: #556B2F;
     position: relative;
+    font-family: "Playfair Display";
+    font-weight: bold;
+}
+.header h1 {
+    font-size: 50px;
+    color: #000;
 }
 
 .logo {
@@ -65,13 +71,14 @@ main {
 
 /* Contact Form Section */
 section {
-    
+
     background-color: #4b5937; 
-    border-radius: 30px; 
-    padding: 2rem 3rem; 
-    width: 450px;
+    border-radius: 30px;
+    padding: 2rem 3rem;
+    width: 100%;  
+    max-width: 450px;  
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
@@ -123,9 +130,59 @@ button:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #55643E;
+    background-color: #556B2F;
     color: #FDFBEF;
     text-align: center;
     padding: 1rem;
     width: 100%;
+}
+
+/* Smartphone Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 36px; 
+        margin: 10px 0; 
+    }
+
+    .topnav {
+        flex-direction: column; 
+    }
+
+    .topnav a {
+        font-size: 18px; 
+        padding: 10px; 
+        text-align: left; 
+    }
+
+    .logo {
+        height: 80px; 
+    }
+
+    section {
+        padding: 1rem; 
+    }
+
+    h3 {
+        font-size: 1.5rem; 
+    }
+}
+
+/* PC Styles */
+@media (min-width: 769px) {
+    .header h1 {
+        font-size: 50px; 
+    }
+
+    .topnav a {
+        font-size: 24px; 
+        padding: 14px; 
+    }
+
+    section {
+        padding: 2rem 3rem; 
+    }
+
+    h3 {
+        font-size: 2rem; 
+    }
 }
