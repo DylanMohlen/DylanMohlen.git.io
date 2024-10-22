@@ -1,4 +1,4 @@
-/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -59,18 +59,19 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    min-height: calc(100vh - 160px); /* Space for header and footer */
+    min-height: calc(100vh - 160px); 
     margin-top: 80px;
 }
 
 /* Contact Form Section */
 section {
-    background-color: #4b5937; /* Darker green */
-    border-radius: 30px; /* Rounded corners */
-    padding: 2rem 3rem; /* Extra padding for better spacing */
+    
+    background-color: #4b5937; 
+    border-radius: 30px; 
+    padding: 2rem 3rem; 
     width: 450px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h3 {
@@ -95,8 +96,8 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 12px; /* Larger padding for input fields */
-    border-radius: 8px; /* Rounded input fields */
+    padding: 12px; 
+    border-radius: 8px; 
     border: 1px solid #ccc;
     background-color: #FFFFF0;
     font-size: 1rem;
