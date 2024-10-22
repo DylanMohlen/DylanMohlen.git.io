@@ -8,46 +8,49 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #FDFBEF;
+    background-color: #FFFFF0;
     color: #5C4033;
     line-height: 1.6;
 }
 
 /* Header Styles */
-header {
-    background-color: #55643E;
-    color: #FDFBEF;
+.header {
+    padding: 30px;
     text-align: center;
-    padding: 1rem;
+    background-color: #556B2F;
     position: relative;
-    z-index: 10;
 }
 
-/* Navigation Styles */
-nav {
-    margin-top: 1rem;
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
 }
 
-nav ul {
-    list-style: none;
+/* Top Navigation Bar Styles */
+.topnav {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 0;
-    margin-bottom: 1rem;
+    justify-content: space-between;
+    background-color: #556B2F;
 }
 
-nav a {
-    color: #FDFBEF;
+.topnav a {
+    flex: 1;
+    color: #f2f2f2;
+    padding: 14px;
+    text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    background-color: #F28A77;
-    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #E2725B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-nav a:hover {
-    background-color: #C85644;
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 /* Main Section for Contact Page */
@@ -56,23 +59,24 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    min-height: calc(100vh - 160px);  /* Makes sure the main area takes up the remaining space */
-    margin-top: 80px;  /* Space from the top to avoid overlapping the header */
+    min-height: calc(100vh - 160px); /* Space for header and footer */
+    margin-top: 80px;
 }
 
-/* Section with Contact Form */
+/* Contact Form Section */
 section {
-    background-color: #55643E;
-    border-radius: 20px;
-    padding: 2rem;
-    width: 400px;
+    background-color: #4b5937; /* Darker green */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2rem 3rem; /* Extra padding for better spacing */
+    width: 450px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: italic;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #FDFBEF;
 }
 
@@ -91,19 +95,24 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 0.75rem;
-    border-radius: 8px;
+    padding: 12px; /* Larger padding for input fields */
+    border-radius: 8px; /* Rounded input fields */
     border: 1px solid #ccc;
-    background-color: #FDFBEF;
+    background-color: #FFFFF0;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
 }
 
 button {
     background-color: #8B0000;
     color: #FDFBEF;
-    padding: 0.75rem;
+    padding: 12px;
     border: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -117,7 +126,5 @@ footer {
     color: #FDFBEF;
     text-align: center;
     padding: 1rem;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
