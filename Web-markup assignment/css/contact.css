@@ -13,6 +13,10 @@ body {
     line-height: 1.6;
 }
 
+.city-name {
+    color:#FFFFF0;
+}
+
 /* Header Styles */
 .header {
     padding: 30px;
@@ -21,10 +25,11 @@ body {
     position: relative;
     font-family: "Playfair Display";
     font-weight: bold;
+    font-size: 36px;
 }
 .header h1 {
     font-size: 50px;
-    color: #000;
+    color: #FFFFFF;
 }
 
 .logo {
@@ -135,6 +140,22 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100%;
+}
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+h1, h2, h3 {
+    margin: 10px;
+}
+.contact-form-border {
+    border-color: red; 
+    border-style: solid; 
+    border-width: 2px;
 }
 
 /* Smartphone Styles */
