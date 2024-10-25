@@ -2,5 +2,5 @@ o Student name: Dylan Möhlen
 o Student number: 675311 
 o Student class: HAIT24FT1A 
 o GitHub Repository: https://github.com/DylanMohlen/DylanMohlen675311WebMarkup
-o GitHub Pages URL: https://dylanmohlen.github.io/DylanMohlen675311WebMarkup/index.html
+o GitHub Pages URL: https://dylanmohlen.github.io/DylanMohlen675311WebMarkup/
 o GitHub Pages URL:https://dylanmohlen.github.io/DylanMohlen675311WebMarkup/
