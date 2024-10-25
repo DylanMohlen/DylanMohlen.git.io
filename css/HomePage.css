@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lora", sans-serif;
     background-color: #FDFBEF;
     color: #5C4033;
     min-height: 100vh;
@@ -53,6 +54,7 @@ body {
     background-color: #E2725B;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
 .topnav a:hover {
@@ -67,8 +69,7 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
-    color: #FFFFF0;
-    
+    color: #FFFFF0;  
 }
 
 main {
@@ -168,6 +169,11 @@ footer {
     article {
         max-width: 100%; 
         padding: 0; 
+    }
+
+    .cookies-message {
+        left: 10px; 
+        bottom: 10px; 
     }
 }
 

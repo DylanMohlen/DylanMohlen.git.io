@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,15 +6,14 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 16px;
   line-height: 1.625; 
   background-color: #FFFFF0;
-  
 }
+
 .city-name {
-  color:#FFFFF0;
-  
+  color: #5C4033; 
 }
 
 p {
@@ -25,6 +25,7 @@ p::first-letter {
   color: #E2725B;
 }
 
+/* Header Styles */
 .header {
   padding: 20px;
   text-align: center;
@@ -34,8 +35,10 @@ p::first-letter {
   background-color: #556B2F;
   position: relative;
 }
+
 h1 {
   letter-spacing: 2px; 
+  line-height: 1.2; 
 }
 
 h2 {
@@ -54,6 +57,7 @@ h2 {
   color: #FFFFFF;
 }
 
+/* Navigation Styles */
 .topnav {
   display: flex;
   justify-content: space-around; 
@@ -72,8 +76,6 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem; 
 }
- 
-/* (hover) pseudo-class */
 
 .topnav a:hover {
   background-color: #ddd;
@@ -88,6 +90,7 @@ h2 {
   border: 1px solid #333;
 }
 
+/* Layout Styles */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -101,26 +104,18 @@ h2 {
 
 .leftcolumn {
   flex: 3; 
-  float: left;
 }
 
 .rightcolumn {
   flex: 1; 
 }
 
+/* Card Styles */
 .card {
   background-color: #FFFFF0;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border: 2px dashed #556B2F;
-}
-
-table tr:nth-child(even) {
-  background-color: #CFF;
-}
-
-table tr:nth-child(odd) {
-  background-color: #FFF;
 }
 
 .card h2 {
@@ -130,6 +125,16 @@ table tr:nth-child(odd) {
   font-size: 2rem; 
 }
 
+/* Table Styles */
+table tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+/* Image Styles */
 .images {
   width: 100%;
   height: auto; 
@@ -143,6 +148,7 @@ table tr:nth-child(odd) {
   object-fit: cover; 
 }
 
+/* Footer Styles */
 footer {
   background-color: #55643E;
   color: #FDFBEF;
@@ -180,7 +186,7 @@ footer {
   }
 
   .leftcolumn, .rightcolumn {
-      flex: 0 0  100%; 
+      flex: 0 0 100%; 
   }
 
   .images {
